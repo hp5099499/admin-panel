@@ -1,0 +1,24 @@
+.card-header{
+    background:var(--secondary-light);
+    color:var(--secondary-color);
+    font-weight:800 ;
+    letter-spacing: 2px;
+    font-size: 1.5rem;}
+    .card-header{
+        background:var(--secondary-light);
+        color:var(--secondary-color);
+        font-weight:800 ;
+        letter-spacing: 2px;
+        font-size: 1.5rem;
+    }
+    input::placeholder{
+        color:var(--secondary-light)
+    }
+   .card{
+    z-index: 3;
+   font-weight: 800;
+   font-size: large;
+   font-family: cursive;
+    background: url(../../../assets/images/skill-bg.jpg);
+    background-repeat: no-repeat ;
+   }

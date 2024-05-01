@@ -1,0 +1,101 @@
+<div class="bg">
+<div class="container-fluid  register mt-5 d-flex justify-content-center align-items-center ">
+
+    <div class="container p-3  shadow-lg ">
+
+        <div class="card   p-3">
+
+            <div class="card-header p-3">
+                <h1 class="text-light ">Registration Form</h1>
+            </div>
+            <div class="card-body mb-3 ">
+                <form [formGroup]="userRegForm">
+                    <div class="row">
+                        <div class="col-xl-6 mb-3">
+                            <label for="firstname" class="form-label">Firstname</label>
+                            <input type="text" class="form-control" formControlName="firstname"
+                                placeholder="Please enter your Firstname">
+                            <div
+                                *ngIf="userRegForm?.get('firstname')?.invalid && (userRegForm.get('firstname')?.dirty || userRegForm.get('firstname')?.touched)">
+                                <div *ngIf="userRegForm.get('firstname')?.errors">
+                                    <p class="text-danger">Firstname Required !</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 mb-3">
+                            <label for="lastname" class="form-label">Lastname</label>
+                            <input type="text" class="form-control" formControlName="lastname"
+                                placeholder="Please enter your Lastname">
+                            <div
+                                *ngIf="userRegForm?.get('lastname')?.invalid && (userRegForm.get('lastname')?.dirty || userRegForm.get('lastname')?.touched)">
+                                <div *ngIf="userRegForm.get('lastname')?.errors">
+                                    <p class="text-danger">Lastname Required !</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-xl-6 mb-3">
+                            <label for="contact" class="form-label">Contact no.</label>
+                            <input type="text" class="form-control" formControlName="contact"
+                                placeholder="Please enter your Contact">
+                            <div
+                                *ngIf="userRegForm?.get('contact')?.invalid && (userRegForm.get('contact')?.dirty || userRegForm.get('contact')?.touched)">
+                                <div *ngIf="userRegForm.get('contact')?.errors">
+                                    <p class="text-danger">Please enter your 10 digit contact number .</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-xl-6 mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="text" class="form-control" formControlName="email"
+                                placeholder="Please enter your E-mail">
+                            <div
+                                *ngIf="userRegForm?.get('email')?.invalid && (userRegForm.get('email')?.dirty || userRegForm.get('email')?.touched)">
+                                <div *ngIf="userRegForm.get('email')?.errors">
+                                    <p class="text-danger">Please enter your email address.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-xl-6 mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" formControlName="password"
+                                placeholder="Please enter your Password">
+                            <div
+                                *ngIf="userRegForm?.get('password')?.invalid && (userRegForm.get('password')?.dirty || userRegForm.get('password')?.touched)">
+                                <div *ngIf="userRegForm.get('password')?.errors">
+                                    <p class="text-danger">Please enter your Password of minimum length of 5 characters
+                                        .</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-xl-6 mb-3">
+                            <label for="cpassword" class="form-label">Confirm Password</label>
+                            <input type="cpassword" class="form-control" formControlName="cpassword"
+                                placeholder="Please confirm your password ">
+                            <div
+                                *ngIf="userRegForm?.get('cpassword')?.invalid && (userRegForm.get('cpassword')?.dirty || userRegForm.get('cpassword')?.touched)">
+                                <div *ngIf="userRegForm.get('cpassword')?.errors">
+                                    <p class="text-danger">Please enter Confirm your password..</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <div class="cardfooter">
+                <button class="btn btn-primary text-light " (click)="register()" [disabled]='!userRegForm.valid'
+                    float-end>Register</button>
+
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</div>

@@ -1,0 +1,39 @@
+<div class="container-fluid login-section d-flex justify-content-center align-items-center">
+    <div class="card login-card p-3 shadow-lg">
+        <div class="card-header p-3">Login</div>
+
+        <div class="card-body mb-3">
+            <form [formGroup]="loginForm">
+                <div class="row">
+                    <div class="col-xl-12 mb-3 ">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="text" class="form-control" id="email" placeholder="xyz@email.com"
+                            formControlName="email">
+
+                        <div *ngIf="loginForm.controls['email'].hasError('required')&& loginForm.controls['email'].touched"
+                            class="text-danger">E-mail is required</div>
+                    </div>
+                    <div class="col-xl-12 mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="*****"
+                            formControlName="password">
+                        <div *ngIf="loginForm.controls['password'].hasError('required')&& loginForm.controls['password'].touched"
+                            class="text-danger">Password is required</div>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="card-footer">
+            Click here to Register <a routerLink="/register">Register</a>
+            <button class="btn btn-primary float-end" (click)="submit()"
+                [disabled]="!this.loginForm.valid">Login</button><div class="row">
+                    <!-- <div class="col-xl-12">
+                        <button class="btn btn-primary" (click)="verifyToken()">Verify</button>
+                    </div> -->
+        </div>
+    </div>
+    
+    
+</div>
+

@@ -1,0 +1,28 @@
+h3{
+   
+    font-size: 2rem;
+    inset: 10px;
+}
+.charts{
+    display: flex;
+}
+.pie{
+    flex:1;
+}
+.line{
+    flex:1;
+}
+.row{
+    margin:10px;
+    box-shadow: 8px 5px 5px rgb(165, 158, 158) ,5px 8px 5px rgb(86, 92, 77);
+
+}
+.card{
+     width: 525px;
+    height: 400px;
+   display: flex;
+   background: #d9dbdf;
+}
+.TAB{
+    font-size: 1.2rem;
+}

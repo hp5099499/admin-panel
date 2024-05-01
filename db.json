@@ -1,0 +1,46 @@
+{
+    "chartdata": [
+        {
+            "year": 2017,
+            "amount": 45000,
+            "color": "rgba(255,99,133,0.2)",
+            "bordercolor": "rgb(255,99,132)"
+        },
+        {
+            "year": 2018,
+            "amount": 49000,
+            "color": "rgba(255,159,64,0.2)",
+            "bordercolor": "rgb(255,159,64)"
+        },
+        {
+            "year": 2019,
+            "amount": 46000,
+            "color": "rgba(255,150,64,0.2)",
+            "bordercolor": "rgb(255,150,64)"
+        },
+        {
+            "year": 2020,
+            "amount": 54000,
+            "color": "rgba(255,250,86,0.2)",
+            "bordercolor": "rgb(255,250,86)"
+        },
+        {
+            "year": 2021,
+            "amount": 26000,
+            "color": "rgba(255,152,192,0.2)",
+            "bordercolor": "rgba(255,152,192)"
+        },
+        {
+            "year": 2022,
+            "amount": 63000,
+            "color": "rgba(75,192,192,0.2)",
+            "bordercolor": "rgb(75,192,192"
+        },
+        {
+            "year": 2023,
+            "amount": 70000,
+            "color": "rgba(255,205,86,0.2)",
+            "bordercolor": "rgb(255,205,86)"
+        }
+    ]
+}
